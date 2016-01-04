@@ -1,0 +1,6 @@
+I created this program to Get information on anyone in class, So Jon and Amanda have everyones information 
+and we can share among other classmates if so desired. 
+
+To run the file just run > ruby class_information.rb
+
+If you dont have an existing file it will create one if you do it will add the information entered to the file.
