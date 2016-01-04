@@ -1,4 +1,8 @@
-class_info = File.open('class_information.txt','a')
+#If class_information file does not exist it will create a file
+#if it does it will add your information to it 
+
+class_info = "class_information.txt"
+class_info = File.open(class_info,'a')
 
 puts "Can I get a little information off you please?"
 #Puts a message to the screen and gets information from the user 
@@ -11,15 +15,14 @@ print "Email or FaceBook Info. "
 email = gets.chomp
 print "What are your strengths? "; strengths = gets.chomp
 print "What are you weaknesses? " ; weaknesses = gets.chomp
-print "What do you want to learn?" ; learn = gets.chomp
-print " Do you have any Questions? "; questions = gets.chomp
+print "What do you want to learn? " ; learn = gets.chomp
+print " Do you have any Questions? " ; questions = gets.chomp
 
 puts "Thanks I'll submit you information."
 
 #writes your information to the class information file
 
 # "\n" adds a new line 
-
 
 class_info.write("\n" + "Name: "+ name )
 class_info.write("\n" + "Phone Number: " + phone)
@@ -28,12 +31,5 @@ class_info.write("\n" + "What are your strengths? " + strengths)
 class_info.write("\n" + "What are you weaknesses? " + weaknesses)
 class_info.write("\n" + "What do you want to learn? " + learn) 
 class_info.write("\n" + "Any Questions? " + questions + "\n")
-
-
-
-
-
-
-
 
 class_info.close
